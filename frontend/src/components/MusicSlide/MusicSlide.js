@@ -9,138 +9,147 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import musicCover from "../../images/mcover.jpg";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
+import Grid from "@mui/material/Unstable_Grid2";
 import "./MusicSlide.css";
 
 const MusicSlide = () => {
-    return (
-        <div className="container my-5">
-            <p className="text-light mt-5 text-start">Recome Music</p>
-           <div className="d-flex justify-content-between mt-2">
-          
-         <Card sx={{ display: "flex", Color: "Primary" }}>
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
-          <CardContent sx={{ flex: "1 0 auto" }}>
-            <Typography component="div" variant="h5">
-              Live From Space
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-              Mac Miller
-            </Typography>
-          </CardContent>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              pl: 1,
-              pb: 1,
-              color: "primary",
-            }}
-          >
-            <IconButton aria-label="previous">
-              <SkipPreviousIcon /> : <SkipNextIcon />
-            </IconButton>
-            <IconButton aria-label="play/pause">
-              <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-            </IconButton>
-            <IconButton aria-label="next">
-              <SkipPreviousIcon /> : <SkipNextIcon />
-            </IconButton>
-          </Box>
-        </Box>
-        <CardMedia
-          component="img"
-          sx={{ width: 151 }}
-          image={musicCover}
-          alt="Live from space album cover"
-        />
+  return (
+    <div className="container my-5">
+      <p className="text-light mt-5 text-start">Recommended Music</p>
+      <div className="d-flex justify-content-between mt-2">
+        <Grid
+          xs
+          display="flex"
+          justifyContent="space-between"
+          alignItems="center"
+          spacing={3}
+          marginBottom="50px"
+        >
+          <Card sx={{ display: "flex", Color: "Primary" }}>
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <CardContent sx={{ flex: "1 0 auto" }}>
+                <Typography component="div" variant="h5">
+                  Live From Space
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="text.secondary"
+                  component="div"
+                >
+                  Mac Miller
+                </Typography>
+              </CardContent>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  pl: 1,
+                  pb: 1,
+                  color: "primary",
+                }}
+              >
+                <IconButton aria-label="previous">
+                  <SkipPreviousIcon />
+                </IconButton>
+                <IconButton aria-label="play/pause">
+                  <PlayArrowIcon sx={{ height: 38, width: 38 }} />
+                </IconButton>
+                <IconButton aria-label="next">
+                  <SkipNextIcon />
+                </IconButton>
+              </Box>
+            </Box>
+            <CardMedia
+              component="img"
+              sx={{ width: 151 }}
+              image={musicCover}
+              alt="Live from space album cover"
+            />
           </Card>
           <Card sx={{ display: "flex", Color: "Primary" }}>
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
-          <CardContent sx={{ flex: "1 0 auto" }}>
-            <Typography component="div" variant="h5">
-              Live From Space
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-              Mac Miller
-            </Typography>
-          </CardContent>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              pl: 1,
-              pb: 1,
-              color: "primary",
-            }}
-          >
-            <IconButton aria-label="previous">
-              <SkipPreviousIcon /> : <SkipNextIcon />
-            </IconButton>
-            <IconButton aria-label="play/pause">
-              <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-            </IconButton>
-            <IconButton aria-label="next">
-              <SkipPreviousIcon /> : <SkipNextIcon />
-            </IconButton>
-          </Box>
-        </Box>
-        <CardMedia
-          component="img"
-          sx={{ width: 151 }}
-          image={musicCover}
-          alt="Live from space album cover"
-        />
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <CardContent sx={{ flex: "1 0 auto" }}>
+                <Typography component="div" variant="h5">
+                  Live From Space
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="text.secondary"
+                  component="div"
+                >
+                  Mac Miller
+                </Typography>
+              </CardContent>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  pl: 1,
+                  pb: 1,
+                  color: "primary",
+                }}
+              >
+                <IconButton aria-label="previous">
+                  <SkipPreviousIcon />
+                </IconButton>
+                <IconButton aria-label="play/pause">
+                  <PlayArrowIcon sx={{ height: 38, width: 38 }} />
+                </IconButton>
+                <IconButton aria-label="next">
+                  <SkipNextIcon />
+                </IconButton>
+              </Box>
+            </Box>
+            <CardMedia
+              component="img"
+              sx={{ width: 151 }}
+              image={musicCover}
+              alt="Live from space album cover"
+            />
           </Card>
           <Card sx={{ display: "flex", Color: "Primary" }}>
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
-          <CardContent sx={{ flex: "1 0 auto" }}>
-            <Typography component="div" variant="h5">
-              Live From Space
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-              Mac Miller
-            </Typography>
-          </CardContent>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              pl: 1,
-              pb: 1,
-              color: "primary",
-            }}
-          >
-            <IconButton aria-label="previous">
-              <SkipPreviousIcon /> : <SkipNextIcon />
-            </IconButton>
-            <IconButton aria-label="play/pause">
-              <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-            </IconButton>
-            <IconButton aria-label="next">
-              <SkipPreviousIcon /> : <SkipNextIcon />
-            </IconButton>
-          </Box>
-        </Box>
-        <CardMedia
-          component="img"
-          sx={{ width: 151 }}
-          image={musicCover}
-          alt="Live from space album cover"
-        />
-      </Card>
-    </div>
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <CardContent sx={{ flex: "1 0 auto" }}>
+                <Typography component="div" variant="h5">
+                  Live From Space
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="text.secondary"
+                  component="div"
+                >
+                  Mac Miller
+                </Typography>
+              </CardContent>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  pl: 1,
+                  pb: 1,
+                  color: "primary",
+                }}
+              >
+                <IconButton aria-label="previous">
+                  <SkipPreviousIcon />
+                </IconButton>
+                <IconButton aria-label="play/pause">
+                  <PlayArrowIcon sx={{ height: 38, width: 38 }} />
+                </IconButton>
+                <IconButton aria-label="next">
+                  <SkipNextIcon />
+                </IconButton>
+              </Box>
+            </Box>
+            <CardMedia
+              component="img"
+              sx={{ width: 151 }}
+              image={musicCover}
+              alt="Live from space album cover"
+            />
+          </Card>
+        </Grid>
+      </div>
     </div>
   );
 };

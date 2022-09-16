@@ -1,5 +1,6 @@
 import React from 'react';
 import CarouCompo from '../CarouCompo/CarouCompo';
+import Footer from '../Footer/Footer';
 import MusicSlide from '../MusicSlide/MusicSlide';
 import NavCompo from '../NavCompo/NavCompo';
 import NewsCompo from '../NewsCompo/NewsCompo';
@@ -14,6 +15,7 @@ const Homepage = () => {
             <Speechtotext></Speechtotext>
             <MusicSlide></MusicSlide>
             <NewsCompo></NewsCompo>
+            <Footer></Footer>
         </div>
     );
 };

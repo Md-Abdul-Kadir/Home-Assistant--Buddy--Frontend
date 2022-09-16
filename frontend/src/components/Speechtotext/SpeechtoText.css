@@ -1,11 +1,12 @@
 .speechIcon{
-    width:100px;
-    margin-top:0px;
+    width:130px;
+    margin-top:-35px;
     /* background-color:#f8568c; */
-    background-color:#000eaa;
+    background-color:#001aab;
     border-radius:50%;
 }
 .marginExtra{
-    margin-bottom: 8%;
-    margin-Top:3%;
+    margin-bottom: 10%;
+    margin-Top:2%;
+  
 }
