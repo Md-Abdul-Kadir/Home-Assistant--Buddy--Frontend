@@ -15,17 +15,23 @@ import "./MusicSlide.css";
 const MusicSlide = () => {
   return (
     <div className="container my-5">
-      <p className="text-light mt-5 text-start">Recommended Music</p>
-      <div className="d-flex justify-content-between mt-2">
+      <p className="text-light mt-5 ms-4 text-start">Recommended Music</p>
+      <div className="">
         <Grid
-          xs
+          container
           display="flex"
           justifyContent="space-between"
           alignItems="center"
-          spacing={3}
           marginBottom="50px"
+          columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          <Card sx={{ display: "flex", Color: "Primary" }}>
+          <Card
+            className="mx-auto my-5"
+            xs={2}
+            sm={4}
+            md={4}
+            sx={{ display: "flex", Color: "Primary", maxWidth: 360 }}
+          >
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <CardContent sx={{ flex: "1 0 auto" }}>
                 <Typography component="div" variant="h5">
@@ -66,7 +72,10 @@ const MusicSlide = () => {
               alt="Live from space album cover"
             />
           </Card>
-          <Card sx={{ display: "flex", Color: "Primary" }}>
+          <Card
+            className="mx-auto my-5"
+            sx={{ display: "flex", Color: "Primary",maxWidth: 360 }}
+          >
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <CardContent sx={{ flex: "1 0 auto" }}>
                 <Typography component="div" variant="h5">
@@ -107,7 +116,10 @@ const MusicSlide = () => {
               alt="Live from space album cover"
             />
           </Card>
-          <Card sx={{ display: "flex", Color: "Primary" }}>
+          <Card
+            className="mx-auto my-5"
+            sx={{ display: "flex", Color: "Primary" ,maxWidth: 360}}
+          >
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <CardContent sx={{ flex: "1 0 auto" }}>
                 <Typography component="div" variant="h5">

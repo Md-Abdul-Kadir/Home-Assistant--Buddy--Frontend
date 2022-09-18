@@ -40,16 +40,20 @@ const NewsCompo = () => {
 
   return (
     <div className="container my-5">
-      <p className="text-light mt-5 text-start">Recommended News</p>
-      <div className="d-flex justify-content-between mt-2">
+      
+      <div className="">
+      <p className="text-light mt-5 ms-4 text-start">Recommended News</p>
         <Grid
-          xs
+          container
           display="flex"
           justifyContent="space-between"
           alignItems="center"
-          spacing={3}
+          columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          <Card sx={{ maxWidth: 345 }}>
+          <Card
+            className="mx-auto my-5"
+             xs={2} sm={4} md={4}
+            sx={{ maxWidth: 360 }}>
             <CardHeader
               avatar={
                 <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -127,7 +131,7 @@ const NewsCompo = () => {
               </CardContent>
             </Collapse>
           </Card>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card className="mx-auto my-5" sx={{ maxWidth: 360 }}>
             <CardHeader
               avatar={
                 <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -205,7 +209,7 @@ const NewsCompo = () => {
               </CardContent>
             </Collapse>
           </Card>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card className="mx-auto my-5" sx={{ maxWidth: 360 }}>
             <CardHeader
               avatar={
                 <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
